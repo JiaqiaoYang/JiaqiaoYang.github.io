@@ -1,0 +1,33 @@
+baseURL = 'https://JiaqiaoYang.github.io/'
+languageCode = 'zh-cn'
+title = '我的知识库'
+theme = 'hugo-theme-stack'
+
+[params]
+    mainSections = ["post"]
+
+    [params.sidebar]
+        emoji = "👋"
+        subtitle = "非 CS 专业的 CS 探索者"
+        
+        [params.sidebar.avatar]
+            src = "https://avatars.githubusercontent.com/u/10000?v=4"
+            local = false
+
+    # 暂时只保留搜索功能，其他的先去掉以防报错
+    [params.widgets]
+        enabled = ["search"]
+
+# 菜单部分：我们先把 icon 那几行删掉了，只保留文字链接
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "archives"
+        name = "归档"
+        url = "/archives/"
+        weight = 2
